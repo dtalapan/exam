@@ -3,8 +3,8 @@
 int ft_atoi(char *str)
 {
     int i = 0;
-    long result = 0;
     int sign = 1;
+    int result;
     if (!str || str[i] == '\0')
         return (0);
     while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
@@ -18,12 +18,11 @@ int ft_atoi(char *str)
         result = result * 10 + (str[i] - '0');
         i++;
     }
-    return (result * sign);
+    return(result * sign);
 }
 
-void    ft_putnbr(int n)
+void    ft_putnbr(int nbr)
 {
-    long nbr = n;
     char c;
     if (nbr < 0)
     {
@@ -44,8 +43,8 @@ void    ft_putnbr(int n)
 
 int main(int argc, char **argv)
 {
-    long i;
-    long nbr;
+    int i;
+    int nbr;
     if (argc == 2)
     {
         i = 1;

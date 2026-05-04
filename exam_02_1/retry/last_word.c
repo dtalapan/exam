@@ -16,6 +16,6 @@ int main(int argc, char **argv)
         while (start < i)
             write(1, &argv[1][start++], 1);
     }
-    write(1, " \n", 1);
+    write(1, "\n", 1);
     return (0);
 }

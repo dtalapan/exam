@@ -3,8 +3,8 @@
 
 void    pgcd(int a, int b)
 {
-    int result;
     int div;
+    int result;
     if (a == 0 || b == 0)
         return ;
     div = 1;
