@@ -1,11 +1,11 @@
-char    *ft_strcpy(char *dst, char *src)
+char    *ft_strcpy(char *s1, char *s2)
 {
     int i = 0;
-    while (src[i])
+    while (s2[i])
     {
-        dst[i] = src[i];
+        s1[i] = s2[i];
         i++;
     }
-    dst[i] = '\0';
-    return (dst);
+    s1[i] = '\0';
+    return (s1);
 }
