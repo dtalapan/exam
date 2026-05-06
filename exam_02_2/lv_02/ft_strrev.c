@@ -1,6 +1,6 @@
 void    ft_swap(char *a, char *b)
 {
-    char    tmp;
+    int tmp;
     tmp = a;
     a = b;
     b = tmp;
@@ -8,8 +8,8 @@ void    ft_swap(char *a, char *b)
 
 char    *ft_strrev(char *str)
 {
-    int i = 0;
     int len = 0;
+    int i = 0;
     while (str[len])
         len++;
     len--;

@@ -2,15 +2,15 @@
 
 char    *ft_itoa(int nbr)
 {
-    long n = nbr;
-    char *str = 0;
     int len = 0;
+    long n = nbr;
+    char *str;
     if (nbr <= 0)
         len = 1;
     long tmp = n;
     if (tmp < 0)
         tmp = -tmp;
-    while(tmp > 0)
+    while (tmp > 0)
     {
         tmp /= 10;
         len++;
@@ -18,17 +18,17 @@ char    *ft_itoa(int nbr)
     str = malloc(len + 1);
     if (!str)
         return (NULL);
-    str[len] = '\0';
+    sr[len] == '\0';
     if (n == 0)
         str[0] = '0';
     if (n < 0)
     {
-        str[0] = '-';
         n = -n;
+        str[0] = '-';
     }
     while (n > 0)
     {
-        str[--len] = (n % 10) + '0';
+        str[len--] = (n % 10) + '0';
         n /= 10;
     }
     return (str);
